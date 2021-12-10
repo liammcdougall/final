@@ -29,6 +29,17 @@
   --formInput:      var(--white);
 }
 
+.dark-theme {
+  --navBg:          var(--darkGreen);
+  --navLinkHoverBg: var(--lightCoral);
+  --mainBg:         var(--black);
+  --fontColor:      var(--white);
+  --navLinkColor:   var(--lightCoral);
+  --formBG:         var(--lightCoral);
+  --formInput:      var(--black);
+
+}
+
 /* toggle styles begin */
 .toggle {
   appearance: none;
@@ -187,3 +198,23 @@ input[type=text]:focus {
  background: var(--darkGreen);
  color: var(--white);
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+  h1, h2{
+    font-size: 4rem;
+  
+  }
+
+  .myForm{
+    max-width: 100%;
+
+  }
+  .message > textarea {
+    min-width: fit-content;
+    max-width: 100%;
+  }
+}
+
